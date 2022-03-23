@@ -17,6 +17,8 @@
 		9918C01327EA56CE00AA62B4 /* FlagQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C01227EA56CE00AA62B4 /* FlagQuizTests.swift */; };
 		9918C01D27EA56CE00AA62B4 /* FlagQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C01C27EA56CE00AA62B4 /* FlagQuizUITests.swift */; };
 		9918C01F27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C01E27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift */; };
+		9918C02F27EB296100AA62B4 /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C02E27EB296100AA62B4 /* QuizScreenViewController.swift */; };
+		9918C03127EB298800AA62B4 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03027EB298800AA62B4 /* ResultScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9918C01827EA56CE00AA62B4 /* FlagQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9918C01C27EA56CE00AA62B4 /* FlagQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagQuizUITests.swift; sourceTree = "<group>"; };
 		9918C01E27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9918C02E27EB296100AA62B4 /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
+		9918C03027EB298800AA62B4 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +105,9 @@
 		9918BFF727EA56CA00AA62B4 /* FlagQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				9918BFF827EA56CA00AA62B4 /* AppDelegate.swift */,
-				9918BFFA27EA56CA00AA62B4 /* SceneDelegate.swift */,
-				9918BFFC27EA56CA00AA62B4 /* ViewController.swift */,
-				9918BFFE27EA56CA00AA62B4 /* Main.storyboard */,
-				9918C00427EA56CD00AA62B4 /* Assets.xcassets */,
-				9918C00627EA56CD00AA62B4 /* LaunchScreen.storyboard */,
-				9918C00927EA56CD00AA62B4 /* Info.plist */,
-				9918C00127EA56CA00AA62B4 /* FlagQuiz.xcdatamodeld */,
+				9918C02D27EB280E00AA62B4 /* Views */,
+				9918C02C27EB280100AA62B4 /* Controllers */,
+				9918C02B27EB27E900AA62B4 /* Supporting Files */,
 			);
 			path = FlagQuiz;
 			sourceTree = "<group>";
@@ -128,6 +127,37 @@
 				9918C01E27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift */,
 			);
 			path = FlagQuizUITests;
+			sourceTree = "<group>";
+		};
+		9918C02B27EB27E900AA62B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9918BFF827EA56CA00AA62B4 /* AppDelegate.swift */,
+				9918BFFA27EA56CA00AA62B4 /* SceneDelegate.swift */,
+				9918C00427EA56CD00AA62B4 /* Assets.xcassets */,
+				9918C00627EA56CD00AA62B4 /* LaunchScreen.storyboard */,
+				9918C00927EA56CD00AA62B4 /* Info.plist */,
+				9918C00127EA56CA00AA62B4 /* FlagQuiz.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9918C02C27EB280100AA62B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9918BFFC27EA56CA00AA62B4 /* ViewController.swift */,
+				9918C02E27EB296100AA62B4 /* QuizScreenViewController.swift */,
+				9918C03027EB298800AA62B4 /* ResultScreenViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9918C02D27EB280E00AA62B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9918BFFE27EA56CA00AA62B4 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9918C03127EB298800AA62B4 /* ResultScreenViewController.swift in Sources */,
+				9918C02F27EB296100AA62B4 /* QuizScreenViewController.swift in Sources */,
 				9918C00327EA56CA00AA62B4 /* FlagQuiz.xcdatamodeld in Sources */,
 				9918BFFD27EA56CA00AA62B4 /* ViewController.swift in Sources */,
 				9918BFF927EA56CA00AA62B4 /* AppDelegate.swift in Sources */,
@@ -444,7 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlagQuiz/Info.plist;
+				INFOPLIST_FILE = "FlagQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FlagQuiz/Info.plist;
+				INFOPLIST_FILE = "FlagQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
