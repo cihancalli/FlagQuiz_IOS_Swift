@@ -131,10 +131,14 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6gE-vG-BE0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                     </view>
                     <navigationItem key="navigationItem" title="Flag Quiz" id="cSI-y9-cfc"/>
                     <connections>
+                        <outlet property="AButton" destination="TtV-01-Zgq" id="fzg-6u-NXD"/>
+                        <outlet property="BButton" destination="weu-21-gNd" id="jJN-xY-X5f"/>
+                        <outlet property="CButton" destination="TBJ-Vy-I77" id="M9B-a1-zgO"/>
+                        <outlet property="DButton" destination="KJT-Y4-L1H" id="dUk-Zc-t1s"/>
                         <outlet property="correctTextLabel" destination="ElU-nN-DkL" id="yxO-7m-Ljb"/>
                         <outlet property="flagImageView" destination="jgO-s0-5qD" id="6T7-rn-na7"/>
                         <outlet property="questionTextLabel" destination="JSM-Hf-YoQ" id="3Gl-LD-7pT"/>
@@ -157,7 +161,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 CORRECT - 1 WRONG " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktl-Iq-8MV">
                                 <rect key="frame" x="16" y="157" width="358" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -221,6 +225,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

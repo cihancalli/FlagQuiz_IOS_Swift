@@ -19,6 +19,14 @@
 		9918C01F27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C01E27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift */; };
 		9918C02F27EB296100AA62B4 /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C02E27EB296100AA62B4 /* QuizScreenViewController.swift */; };
 		9918C03127EB298800AA62B4 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03027EB298800AA62B4 /* ResultScreenViewController.swift */; };
+		9918C04427EB62A000AA62B4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03927EB629F00AA62B4 /* FMResultSet.m */; };
+		9918C04527EB62A000AA62B4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03A27EB629F00AA62B4 /* FMDatabasePool.m */; };
+		9918C04627EB62A000AA62B4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03B27EB629F00AA62B4 /* FMDatabaseAdditions.m */; };
+		9918C04727EB62A000AA62B4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918C03F27EB629F00AA62B4 /* FMDatabase.m */; };
+		9918C04827EB62A000AA62B4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918C04127EB629F00AA62B4 /* FMDatabaseQueue.m */; };
+		9918C04B27EB633600AA62B4 /* flagquiz.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9918C04A27EB633600AA62B4 /* flagquiz.sqlite */; };
+		9918C04D27EB640500AA62B4 /* FlagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C04C27EB640500AA62B4 /* FlagModel.swift */; };
+		9918C04F27EB6B7D00AA62B4 /* FlagDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918C04E27EB6B7D00AA62B4 /* FlagDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,22 @@
 		9918C01E27EA56CE00AA62B4 /* FlagQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9918C02E27EB296100AA62B4 /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
 		9918C03027EB298800AA62B4 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
+		9918C03627EB623700AA62B4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9918C03827EB629E00AA62B4 /* FlagQuiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlagQuiz-Bridging-Header.h"; sourceTree = "<group>"; };
+		9918C03927EB629F00AA62B4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9918C03A27EB629F00AA62B4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		9918C03B27EB629F00AA62B4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9918C03C27EB629F00AA62B4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		9918C03D27EB629F00AA62B4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		9918C03E27EB629F00AA62B4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9918C03F27EB629F00AA62B4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		9918C04027EB629F00AA62B4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		9918C04127EB629F00AA62B4 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		9918C04227EB62A000AA62B4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		9918C04327EB62A000AA62B4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9918C04A27EB633600AA62B4 /* flagquiz.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = flagquiz.sqlite; sourceTree = "<group>"; };
+		9918C04C27EB640500AA62B4 /* FlagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagModel.swift; sourceTree = "<group>"; };
+		9918C04E27EB6B7D00AA62B4 /* FlagDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +113,7 @@
 				9918C01127EA56CE00AA62B4 /* FlagQuizTests */,
 				9918C01B27EA56CE00AA62B4 /* FlagQuizUITests */,
 				9918BFF627EA56CA00AA62B4 /* Products */,
+				9918C03527EB623700AA62B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +130,8 @@
 		9918BFF727EA56CA00AA62B4 /* FlagQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				9918C03727EB624900AA62B4 /* FMDB */,
+				9918C03427EB5CF900AA62B4 /* Models */,
 				9918C02D27EB280E00AA62B4 /* Views */,
 				9918C02C27EB280100AA62B4 /* Controllers */,
 				9918C02B27EB27E900AA62B4 /* Supporting Files */,
@@ -158,6 +185,43 @@
 				9918BFFE27EA56CA00AA62B4 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9918C03427EB5CF900AA62B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9918C04A27EB633600AA62B4 /* flagquiz.sqlite */,
+				9918C04C27EB640500AA62B4 /* FlagModel.swift */,
+				9918C04E27EB6B7D00AA62B4 /* FlagDAO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9918C03527EB623700AA62B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9918C03627EB623700AA62B4 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9918C03727EB624900AA62B4 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				9918C04027EB629F00AA62B4 /* FMDatabase.h */,
+				9918C03F27EB629F00AA62B4 /* FMDatabase.m */,
+				9918C03E27EB629F00AA62B4 /* FMDatabaseAdditions.h */,
+				9918C03B27EB629F00AA62B4 /* FMDatabaseAdditions.m */,
+				9918C03C27EB629F00AA62B4 /* FMDatabasePool.h */,
+				9918C03A27EB629F00AA62B4 /* FMDatabasePool.m */,
+				9918C04327EB62A000AA62B4 /* FMDatabaseQueue.h */,
+				9918C04127EB629F00AA62B4 /* FMDatabaseQueue.m */,
+				9918C03D27EB629F00AA62B4 /* FMDB.h */,
+				9918C04227EB62A000AA62B4 /* FMResultSet.h */,
+				9918C03927EB629F00AA62B4 /* FMResultSet.m */,
+				9918C03827EB629E00AA62B4 /* FlagQuiz-Bridging-Header.h */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +292,7 @@
 				TargetAttributes = {
 					9918BFF427EA56CA00AA62B4 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					9918C00D27EA56CE00AA62B4 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -266,6 +331,7 @@
 			files = (
 				9918C00827EA56CD00AA62B4 /* LaunchScreen.storyboard in Resources */,
 				9918C00527EA56CD00AA62B4 /* Assets.xcassets in Resources */,
+				9918C04B27EB633600AA62B4 /* flagquiz.sqlite in Resources */,
 				9918C00027EA56CA00AA62B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +359,15 @@
 			files = (
 				9918C03127EB298800AA62B4 /* ResultScreenViewController.swift in Sources */,
 				9918C02F27EB296100AA62B4 /* QuizScreenViewController.swift in Sources */,
+				9918C04427EB62A000AA62B4 /* FMResultSet.m in Sources */,
+				9918C04727EB62A000AA62B4 /* FMDatabase.m in Sources */,
 				9918C00327EA56CA00AA62B4 /* FlagQuiz.xcdatamodeld in Sources */,
 				9918BFFD27EA56CA00AA62B4 /* ViewController.swift in Sources */,
+				9918C04627EB62A000AA62B4 /* FMDatabaseAdditions.m in Sources */,
+				9918C04527EB62A000AA62B4 /* FMDatabasePool.m in Sources */,
+				9918C04827EB62A000AA62B4 /* FMDatabaseQueue.m in Sources */,
+				9918C04F27EB6B7D00AA62B4 /* FlagDAO.swift in Sources */,
+				9918C04D27EB640500AA62B4 /* FlagModel.swift in Sources */,
 				9918BFF927EA56CA00AA62B4 /* AppDelegate.swift in Sources */,
 				9918BFFB27EA56CA00AA62B4 /* SceneDelegate.swift in Sources */,
 			);
@@ -473,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -490,6 +564,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zerdasoftware.FlagQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlagQuiz/FMDB/FlagQuiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -517,6 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zerdasoftware.FlagQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlagQuiz/FMDB/FlagQuiz-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
